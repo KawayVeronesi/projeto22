@@ -8,7 +8,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/estiloadm.css"
+    <link rel="stylesheet" href="./css/estiloadm.css">
     <title>MENU ADMINISTRATIVO</title>
 </head>
 <body>
@@ -23,7 +23,7 @@
             <?php
             #ABERTO O PHP PARA VALIDAR SE A SESSÃO DO USUARIO ESTÁ ABERTA
             #SE SESSÃO ABERTA, FECHA PHP PARA ELEMENTOS HTML
-                if(nomeusuario != null){
+                if($nomeusuario != null){
                     ?>
                     <!--USO DO ELEMENTO HTML COM PHP NTERNO -->
                     <li class="profile">OLÁ <?=strtoupper($nomeusuario)?></li>
