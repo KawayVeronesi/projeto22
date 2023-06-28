@@ -11,7 +11,7 @@ session_start();
 
 $id = $_GET['id'];
 
-$sql = "SELECT * FROM clientes WHERE usu_id = '$id'";
+$sql = "SELECT * FROM clientes WHERE cli_id = '$id'";
 
 $retorno = mysqli_query($link, $sql);
 
@@ -146,6 +146,8 @@ echo"<script>window.location.href='admhome.php';</script>";
             <li><a href="cadastraproduto.php">CADASTRA PRODUTO</a></li>
 
             <li><a href="listaproduto.php">LISTA PRODUTO</a></li>
+
+            <li><a href="cadastracliente.php">CADASTRA CLIENTE</a></li>
 
             <li><a href="listacliente.php">LISTA CLIENTE</a></li>
 

@@ -36,10 +36,10 @@ if($_SERVER['REQUEST_METHOD'] == 'POST')
     }
     #VALIDAÇÃO DE TRUE E FALSE
     if($cont == 1){
-        echo"<script>window.alert('USUARIO JÁ EXISTENTE');</script";
+        echo"<script>window.alert('CLIENTE JÁ EXISTENTE');</script";
     }
     else{
-        $sql = "INSERT INTO usuarios (cli_cpf, cli_nome, cli_senha, cli_data, cli_telefone, cli_logradouro, cli_numero, cli_cidade cli_ativo)
+        $sql = "INSERT INTO clientes (cli_cpf, cli_nome, cli_senha, cli_data, cli_telefone, cli_logradouro, cli_numero, cli_cidade cli_ativo)
         VALUES('$cpf','$nome','$senha',STR_TO_DATE('$data', '%y-%m-%d'),'$telefone','$logradouro','$numero','$cidade','n')";
         mysqli_query($link, $sql);
         #CADASTRAR USUARIO E JOGA MENSAGEM NA TELA E DIRECIONA PARA LISTA USUARIO

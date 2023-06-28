@@ -25,9 +25,9 @@ while($tbl = mysqli_fetch_array($retorno))
 
 $nome = $tbl[1];
 
-$senha = $tbl[1];
+$senha = $tbl[2];
 
-$ativo = $tbl[1];
+$ativo = $tbl[3];
 
 }
 
@@ -142,7 +142,7 @@ echo"<script>window.location.href='admhome.php';</script>";
 
             <br>
 
-            <input type="radio" name="inativo" value="n" <?=$ativo == "s"?"checked":""?>>INATIVO
+            <input type="radio" name="ativo" value="n" <?=$ativo == "s"?"checked":""?>>INATIVO
 
 
 
